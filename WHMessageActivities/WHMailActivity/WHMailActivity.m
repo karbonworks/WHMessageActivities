@@ -93,7 +93,6 @@
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
     [self activityDidFinish:result == MFMailComposeResultSent];
-	[self.mailController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
